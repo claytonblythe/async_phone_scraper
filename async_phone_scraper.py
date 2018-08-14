@@ -7,7 +7,7 @@ from urllib import parse
 
 
 class AsyncPhoneScraper:
-    def __init__(self, seed_url, max_phone_size=1000, batch_size=300):
+    def __init__(self, seed_url, max_phone_size=1000, batch_size=800):
         self.seed_url = seed_url
         self.url_q = deque([self.seed_url])
         self.seen_numbers = set()
