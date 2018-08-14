@@ -6,7 +6,7 @@ Email: claytondblythe@gmail.com
 
 ### Asynchronous Phone Number Scraper w/ Python
 
-Uses asyncio, aiohttp, to maintain a set of phone numbers scraped from the internet with some seed url. 
+Uses asyncio, aiohttp, beautifulsoup, and regular expressions to search for 7 or 10 digit phone numbers on a website, with the goal of creating a set of phone numbers scraped from the internet with some given seed url. I set an default limit on phone number set size to be 1000 phone numbers for early stopping.
 
 From my tests, it can scrape about 7000 websites for phone numbers in about 30 seconds. Right now, each unique url is visited at most once, but some domains could get a lot of requests, so checking robots.txt would be a nice thing to do. 
 ```
